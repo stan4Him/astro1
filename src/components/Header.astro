@@ -1,12 +1,12 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-
+import Logo from '/images/splogo.jpg';
 ---
 
 <header>
 	<nav>
-		<h2><img src="../assets/splogo.jpg"><a href="/">{SITE_TITLE}</a></h2>
+		<h2><Image src={Logo} alt="A bird sitting on a nest of SP Logo." /><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
