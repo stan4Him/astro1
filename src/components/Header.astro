@@ -1,12 +1,14 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-import Logo from '../images/splogo.jpg';
+// import the Image component and the image
+import { Image } from 'astro:assets';
+import Logo from '../assets/splogo.png'; // Image is 1600x900
 ---
 
 <header>
 	<nav>
-		<h2><Image src={Logo} alt="A bird sitting on a nest of SP Logo." /><a href="/">{SITE_TITLE}</a></h2>
+		<h2><Image src={Logo} alt="SP Logo." /><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
